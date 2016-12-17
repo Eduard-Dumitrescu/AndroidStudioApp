@@ -8,10 +8,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.edward.androidstudiomovieapp.MainActivity">
+    tools:context="com.example.edward.androidstudiomovieapp.MainActivity"
+    android:background="@drawable/download">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:text="Add Movie"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/buttonAddMovie"
+        android:layout_marginBottom="129dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="?attr/actionModeSplitBackground"
+        android:onClick="AddButtonClicked"/>
+
+    <Button
+        android:text="Show Movies"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonShowMovies"
+        android:background="?attr/actionModeSplitBackground"
+        android:contextClickable="false"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/buttonAddMovie"
+        android:layout_alignStart="@+id/buttonAddMovie"
+        android:onClick="ShowMoviesButtonClicked"/>
+
 </RelativeLayout>
+
